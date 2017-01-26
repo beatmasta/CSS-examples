@@ -1,31 +1,57 @@
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Tits</title>
-		<style>
-		tits{
-			display:inline-block;
-			position: relative;
-			border:2px solid pink;
-			width: 30px;
-			height: 30px;
-			border-radius:30px;
-			}
-			tits:after{
-			content:'.';
-			top:-36px;
-			left: 5px;
-			font-size:60px;
-			position: absolute;
-		color:pink;
-		}
-		</style>
-	</head>
-	<body>
-		
-	  <tits type="natural"></tits>
-      <tits type="natural"/></tits>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Tits</title>
+        <style>
+          tits[type="natural"] {
+            width: 30px;
+            height: 30px;
+          }
+          tits[type="natural"]:after {
+              top:-36px;
+              left: 5px;
+          }
+          tits[type="silicone"] {
+            width: 50px;
+            height: 50px;
+          }
+          tits[type="silicone"]:after {
+              top:-25px;
+          }
+          tits[type="silicone"]:nth-child(2n+0):after {
+              top:-25px;
+              left: 20px;
+          }
+          tits[type="silicone"]:nth-child(2n+1):after {
+              top:-25px;
+              left: 15px;
+          }
+        tits{
+          display:inline-block;
+          position: relative;
+          border:2px solid pink;
+          border-radius:30px;
+          }
+            tits:after{
+              content:'.';
+              font-size:60px;
+              position: absolute;
+              color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        
+      <tits type="natural"></tits>
+      <tits type="natural"></tits>
+      
+      <br />
+      
+      <tits type="silicone"></tits>
+      <tits type="silicone"></tits>
+      
+    </body>
 </html>
